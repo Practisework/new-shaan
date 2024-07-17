@@ -1,0 +1,50 @@
+.Bg-Img {
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  height: 100vh;
+  position: relative;
+}
+.Bg-Img::before {
+  content: "";
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIIdXh6NA9d4g_-3EVhPJKOB_Hm57vvkt3Q&usqp=CAU");
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.Bg-Img h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.Bg-Img p {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 15px;
+  padding: 1rem;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  text-align: justify;
+}
+.cn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  .Bg-Img h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,97 @@
+.work-container {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+}
+
+.project-container {
+  max-width: 1640px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 2rem;
+}
+
+.project-card {
+  height: 100%;
+  background: #131111;
+  padding: 1rem;
+  border-radius: 28px;
+}
+
+.project-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+  transform: scale(1) rotate(0deg);
+  transition: all 0.5s linear;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 3.2rem;
+}
+
+.project-card:hover img {
+  transform: scale(1.1) rotate(0deg);
+}
+
+.project-title {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 30px;
+  font-weight: 700px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.pro-details p {
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 5rem;
+}
+.project-card .pro-btns.btm {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.btm {
+  padding: 15px 22px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: rgb(248, 238, 32);
+  color: #222;
+  border-radius: 15rem;
+  border: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  /* margin-bottom: 36rem; */
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+
+.btm-light {
+  background: transparent;
+  color: #fff;
+}
+
+.btm:hover {
+  background: rgba(235, 234, 234, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 740px) {
+  .project-container {
+    max-width: 150px;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
